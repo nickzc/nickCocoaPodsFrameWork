@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D619FAA209ABA7A00BC5D7A /* nickTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D619FA8209ABA7A00BC5D7A /* nickTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D619FAB209ABA7A00BC5D7A /* nickTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D619FA9209ABA7A00BC5D7A /* nickTest.m */; };
 		B759BD29209A024E009B9919 /* nickCocoaPodsFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = B759BD27209A024E009B9919 /* nickCocoaPodsFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D619FA8209ABA7A00BC5D7A /* nickTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nickTest.h; sourceTree = "<group>"; };
+		6D619FA9209ABA7A00BC5D7A /* nickTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nickTest.m; sourceTree = "<group>"; };
 		B759BD24209A024E009B9919 /* nickCocoaPodsFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nickCocoaPodsFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B759BD27209A024E009B9919 /* nickCocoaPodsFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nickCocoaPodsFrameWork.h; sourceTree = "<group>"; };
 		B759BD28209A024E009B9919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 			children = (
 				B759BD27209A024E009B9919 /* nickCocoaPodsFrameWork.h */,
 				B759BD28209A024E009B9919 /* Info.plist */,
+				6D619FA8209ABA7A00BC5D7A /* nickTest.h */,
+				6D619FA9209ABA7A00BC5D7A /* nickTest.m */,
 			);
 			path = nickCocoaPodsFrameWork;
 			sourceTree = "<group>";
@@ -60,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B759BD29209A024E009B9919 /* nickCocoaPodsFrameWork.h in Headers */,
+				6D619FAA209ABA7A00BC5D7A /* nickTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D619FAB209ABA7A00BC5D7A /* nickTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +272,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = nickCocoaPodsFrameWork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.nickCocoaPodsFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -288,11 +298,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = nickCocoaPodsFrameWork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.nickCocoaPodsFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
