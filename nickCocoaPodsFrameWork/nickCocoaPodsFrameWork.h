@@ -16,5 +16,5 @@ FOUNDATION_EXPORT const unsigned char nickCocoaPodsFrameWorkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <nickCocoaPodsFrameWork/PublicHeader.h>
 
-#import <FrameworkTest/nickTest.h>
+#import <nickCocoaPodsFrameWork/nickTest.h>
 
