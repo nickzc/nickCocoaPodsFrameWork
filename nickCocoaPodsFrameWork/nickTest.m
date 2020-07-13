@@ -8,13 +8,15 @@
 //
 
 #import "nickTest.h"
-
+#import <MyLibrary/MyLibraryNick.h>
 @implementation nickTest
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         [self printTextWithTitle:@"默认标题" andMessage:@"默认信息"];
+        //依赖MyLibrary
+        [self findYou];
     }
     return self;
 }
@@ -29,5 +31,10 @@
 
 -(void)printTextWithTitle:(NSString *)title andMessage:(NSString *)message{
     NSLog(@"打印了标题%@,打印了信息%@",title,message);
+}
+
+-(void)findYou{
+    MyLibraryNick *nick = [[MyLibraryNick alloc]init];
+    [nick myLibraryCreat];
 }
 @end
